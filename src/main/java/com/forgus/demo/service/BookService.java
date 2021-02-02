@@ -2,6 +2,7 @@ package com.forgus.demo.service;
 
 import com.forgus.demo.model.Book;
 
+import javax.validation.constraints.NotBlank;
 import java.util.List;
 
 /**
@@ -15,6 +16,6 @@ public interface BookService {
      * @param name 书名
      * @return
      */
-    List<Book> listBooks(String name);
+    List<Book> listBooks(@NotBlank String name);
 
 }

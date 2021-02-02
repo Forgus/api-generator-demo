@@ -1,7 +1,9 @@
 package com.forgus.demo.controller;
 
-import com.forgus.demo.model.IntegrityTemplateDto;
+import com.forgus.demo.model.ArrayParam;
+import com.forgus.demo.model.Book;
 import com.forgus.demo.model.Response;
+import com.forgus.demo.model.TopObj;
 import org.springframework.web.bind.annotation.*;
 
 /**
@@ -15,26 +17,26 @@ import org.springframework.web.bind.annotation.*;
 public class TestController {
 
     /**
-     * url测试
-     *
-     * @param id
+     * 多路径测试
      * @return
      */
-    @RequestMapping(value = "/{id}/copy", method = RequestMethod.GET)
-    public Response<Boolean> copyTemplate(@PathVariable Long id) {
+    @RequestMapping(value = {"/api/restful/dd/sendDdNotify", "/api/restful/dd/sendNotify"}, method = RequestMethod.POST)
+    public Response multiPath() {
         return null;
     }
 
     /**
-     * 循环引用测试
+     * 终极测试
      *
-     * @param id
-     * @param templateDto
+     * @param param
      * @return
      */
-    @RequestMapping(value = "/{id}/update", method = RequestMethod.POST)
-    public Response<Boolean> updateTemplate(@PathVariable Long id, @RequestBody IntegrityTemplateDto templateDto) {
+    @PostMapping(value = "/array")
+    public TopObj<Book> testArray(@RequestBody ArrayParam param) {
         return null;
     }
+
+
+
 
 }

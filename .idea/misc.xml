@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ApiGeneratorConfig">
+    <option name="excludeFieldNames">
+      <set>
+        <option value="serialVersionUID" />
+      </set>
+    </option>
+    <option name="yApiServerUrl" value="http://192.168.21.150:40001" />
+    <option name="projectToken" value="66fa91fcf60095e6b841103bbd2d8789bea77f35fb8822bf331ae085f20bc827" />
+    <option name="projectId" value="11" />
+    <option name="autoCat" value="true" />
+  </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="ES6" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
@@ -10,5 +24,10 @@
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="yapi">
+    <option name="projectToken">6b7971300cd908c425588d957b9700eed83c2f06347bbc3e9f8ca549d929348d</option>
+    <option name="projectId">241</option>
+    <option name="yapiUrl">http://yapi.cai-inc.com</option>
   </component>
 </project>

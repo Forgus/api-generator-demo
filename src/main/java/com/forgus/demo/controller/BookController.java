@@ -80,7 +80,7 @@ public class BookController {
      * @return
      */
     @GetMapping
-    public Response<List<Book>> listBooks(BookQuery query) {
+    public List<Book> listBooks(BookQuery query) {
         return null;
     }
 }
