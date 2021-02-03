@@ -1,9 +1,6 @@
 package com.forgus.demo.controller;
 
-import com.forgus.demo.model.ArrayParam;
-import com.forgus.demo.model.Book;
-import com.forgus.demo.model.Response;
-import com.forgus.demo.model.TopObj;
+import com.forgus.demo.model.*;
 import org.springframework.web.bind.annotation.*;
 
 /**
@@ -26,13 +23,13 @@ public class TestController {
     }
 
     /**
-     * 终极测试
+     * 嵌套泛型
      *
      * @param param
      * @return
      */
     @PostMapping(value = "/array")
-    public TopObj<Book> testArray(@RequestBody ArrayParam param) {
+    public Response<Page<Book>> testArray(@RequestBody ArrayParam param) {
         return null;
     }
 
