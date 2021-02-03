@@ -18,4 +18,5 @@ public class SubObj implements Serializable {
     private List<SubObj> subList;
     private Set<SubObj> subSet;
     private SubObj[] subArray;
+    private TopObj topObj;
 }

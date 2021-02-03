@@ -6,9 +6,9 @@
         <option value="serialVersionUID" />
       </set>
     </option>
-    <option name="yApiServerUrl" value="http://192.168.21.150:40001" />
-    <option name="projectToken" value="66fa91fcf60095e6b841103bbd2d8789bea77f35fb8822bf331ae085f20bc827" />
-    <option name="projectId" value="11" />
+    <option name="yApiServerUrl" value="http://59.202.38.88:3000/" />
+    <option name="projectToken" value="c703229469982cd0908bf2cc86c6a14101050684c418f1014835b8b37ac87b4f" />
+    <option name="projectId" value="16" />
     <option name="autoCat" value="true" />
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
@@ -22,7 +22,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="15" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="yapi">
