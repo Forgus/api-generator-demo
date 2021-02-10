@@ -44,10 +44,11 @@ public class BookController {
      * 更新图书
      *
      * @param id 图书编号
+     * @param book
      * @return
      */
     @PatchMapping("/{id}")
-    public Response updateBook(@PathVariable Long id) {
+    public Response updateBook(@PathVariable Long id,@RequestBody Book book) {
         return null;
     }
 
@@ -68,7 +69,7 @@ public class BookController {
      * @param bookName 书名
      * @return
      */
-    @GetMapping
+    @GetMapping("/{bookName}")
     public Response<List<Book>> listBooks(@RequestParam("name") String bookName) {
         return null;
     }
@@ -79,7 +80,7 @@ public class BookController {
      * @param query 查询参数
      * @return
      */
-    @GetMapping
+    @GetMapping("/query")
     public List<Book> listBooks(BookQuery query) {
         return null;
     }

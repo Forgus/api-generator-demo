@@ -13,6 +13,11 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping(value = "/api/test")
 public class TestController {
 
+    @GetMapping("/noName")
+    public Response testNoName() {
+        return null;
+    }
+
     /**
      * 多路径测试
      * @return
